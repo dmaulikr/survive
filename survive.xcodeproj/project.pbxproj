@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		D092D69519EF945700C6C020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D69419EF945700C6C020 /* main.m */; };
 		D092D69819EF945700C6C020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D69719EF945700C6C020 /* AppDelegate.m */; };
-		D092D69B19EF945700C6C020 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D69A19EF945700C6C020 /* FirstViewController.m */; };
-		D092D69E19EF945700C6C020 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D69D19EF945700C6C020 /* SecondViewController.m */; };
 		D092D6A119EF945700C6C020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092D69F19EF945700C6C020 /* Main.storyboard */; };
 		D092D6A319EF945700C6C020 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D092D6A219EF945700C6C020 /* Images.xcassets */; };
-		D092D6A619EF945700C6C020 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D092D6A419EF945700C6C020 /* LaunchScreen.xib */; };
 		D092D6B219EF945700C6C020 /* surviveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D6B119EF945700C6C020 /* surviveTests.m */; };
+		D092D6BD19EF9F6600C6C020 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D092D6BC19EF9F6600C6C020 /* heart.jpg */; };
+		D092D6C019EFA50600C6C020 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D6BF19EFA50600C6C020 /* CenterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +32,14 @@
 		D092D69419EF945700C6C020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D092D69619EF945700C6C020 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D092D69719EF945700C6C020 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D092D69919EF945700C6C020 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		D092D69A19EF945700C6C020 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		D092D69C19EF945700C6C020 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		D092D69D19EF945700C6C020 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D092D6A019EF945700C6C020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D092D6A219EF945700C6C020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D092D6A519EF945700C6C020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D092D6AB19EF945700C6C020 /* surviveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = surviveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D092D6B019EF945700C6C020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D092D6B119EF945700C6C020 /* surviveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = surviveTests.m; sourceTree = "<group>"; };
+		D092D6BC19EF9F6600C6C020 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heart.jpg; sourceTree = "<group>"; };
+		D092D6BE19EFA50600C6C020 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		D092D6BF19EFA50600C6C020 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +63,7 @@
 		D092D68619EF945700C6C020 = {
 			isa = PBXGroup;
 			children = (
+				D092D6BB19EF9F6600C6C020 /* demouse */,
 				D092D69119EF945700C6C020 /* survive */,
 				D092D6AE19EF945700C6C020 /* surviveTests */,
 				D092D69019EF945700C6C020 /* Products */,
@@ -86,13 +84,10 @@
 			children = (
 				D092D69619EF945700C6C020 /* AppDelegate.h */,
 				D092D69719EF945700C6C020 /* AppDelegate.m */,
-				D092D69919EF945700C6C020 /* FirstViewController.h */,
-				D092D69A19EF945700C6C020 /* FirstViewController.m */,
-				D092D69C19EF945700C6C020 /* SecondViewController.h */,
-				D092D69D19EF945700C6C020 /* SecondViewController.m */,
+				D092D6BE19EFA50600C6C020 /* CenterViewController.h */,
+				D092D6BF19EFA50600C6C020 /* CenterViewController.m */,
 				D092D69F19EF945700C6C020 /* Main.storyboard */,
 				D092D6A219EF945700C6C020 /* Images.xcassets */,
-				D092D6A419EF945700C6C020 /* LaunchScreen.xib */,
 				D092D69219EF945700C6C020 /* Supporting Files */,
 			);
 			path = survive;
@@ -122,6 +117,14 @@
 				D092D6B019EF945700C6C020 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D092D6BB19EF9F6600C6C020 /* demouse */ = {
+			isa = PBXGroup;
+			children = (
+				D092D6BC19EF9F6600C6C020 /* heart.jpg */,
+			);
+			path = demouse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +176,7 @@
 				TargetAttributes = {
 					D092D68E19EF945700C6C020 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = C3G79G7UVP;
 					};
 					D092D6AA19EF945700C6C020 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -205,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D092D6A119EF945700C6C020 /* Main.storyboard in Resources */,
-				D092D6A619EF945700C6C020 /* LaunchScreen.xib in Resources */,
+				D092D6BD19EF9F6600C6C020 /* heart.jpg in Resources */,
 				D092D6A319EF945700C6C020 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D092D69E19EF945700C6C020 /* SecondViewController.m in Sources */,
 				D092D69819EF945700C6C020 /* AppDelegate.m in Sources */,
-				D092D69B19EF945700C6C020 /* FirstViewController.m in Sources */,
 				D092D69519EF945700C6C020 /* main.m in Sources */,
+				D092D6C019EFA50600C6C020 /* CenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,14 +259,6 @@
 				D092D6A019EF945700C6C020 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D092D6A419EF945700C6C020 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D092D6A519EF945700C6C020 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -303,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -338,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -349,6 +344,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = survive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +356,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = survive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +417,7 @@
 				D092D6B719EF945700C6C020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D092D6B819EF945700C6C020 /* Build configuration list for PBXNativeTarget "surviveTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +426,7 @@
 				D092D6BA19EF945700C6C020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
