@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D057271719F0DC83005E17DA /* Libian.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D057271619F0D87C005E17DA /* Libian.ttc */; };
+		D057271F19F0F992005E17DA /* InformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D057271E19F0F992005E17DA /* InformationController.m */; };
+		D057272B19F13B93005E17DA /* TalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D057272919F13B93005E17DA /* TalkViewController.m */; };
+		D057272C19F13B93005E17DA /* TalkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D057272A19F13B93005E17DA /* TalkViewController.xib */; };
 		D092D69519EF945700C6C020 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D69419EF945700C6C020 /* main.m */; };
 		D092D69819EF945700C6C020 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D69719EF945700C6C020 /* AppDelegate.m */; };
 		D092D6A119EF945700C6C020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D092D69F19EF945700C6C020 /* Main.storyboard */; };
@@ -27,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D057271619F0D87C005E17DA /* Libian.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Libian.ttc; sourceTree = "<group>"; };
+		D057271B19F0F137005E17DA /* survive-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "survive-Prefix.pch"; sourceTree = "<group>"; };
+		D057271C19F0F14A005E17DA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D057271D19F0F992005E17DA /* InformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationController.h; sourceTree = "<group>"; };
+		D057271E19F0F992005E17DA /* InformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationController.m; sourceTree = "<group>"; };
+		D057272819F13B93005E17DA /* TalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkViewController.h; sourceTree = "<group>"; };
+		D057272919F13B93005E17DA /* TalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkViewController.m; sourceTree = "<group>"; };
+		D057272A19F13B93005E17DA /* TalkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TalkViewController.xib; sourceTree = "<group>"; };
 		D092D68F19EF945700C6C020 /* survive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = survive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D092D69319EF945700C6C020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D092D69419EF945700C6C020 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +77,7 @@
 			children = (
 				D092D6BB19EF9F6600C6C020 /* demouse */,
 				D092D69119EF945700C6C020 /* survive */,
+				D092D69219EF945700C6C020 /* Supporting Files */,
 				D092D6AE19EF945700C6C020 /* surviveTests */,
 				D092D69019EF945700C6C020 /* Products */,
 			);
@@ -86,9 +99,14 @@
 				D092D69719EF945700C6C020 /* AppDelegate.m */,
 				D092D6BE19EFA50600C6C020 /* CenterViewController.h */,
 				D092D6BF19EFA50600C6C020 /* CenterViewController.m */,
+				D057271D19F0F992005E17DA /* InformationController.h */,
+				D057271E19F0F992005E17DA /* InformationController.m */,
+				D057272819F13B93005E17DA /* TalkViewController.h */,
+				D057272919F13B93005E17DA /* TalkViewController.m */,
+				D057272A19F13B93005E17DA /* TalkViewController.xib */,
+				D057271619F0D87C005E17DA /* Libian.ttc */,
 				D092D69F19EF945700C6C020 /* Main.storyboard */,
 				D092D6A219EF945700C6C020 /* Images.xcassets */,
-				D092D69219EF945700C6C020 /* Supporting Files */,
 			);
 			path = survive;
 			sourceTree = "<group>";
@@ -96,10 +114,13 @@
 		D092D69219EF945700C6C020 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D057271C19F0F14A005E17DA /* Constants.h */,
+				D057271B19F0F137005E17DA /* survive-Prefix.pch */,
 				D092D69319EF945700C6C020 /* Info.plist */,
 				D092D69419EF945700C6C020 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = survive;
 			sourceTree = "<group>";
 		};
 		D092D6AE19EF945700C6C020 /* surviveTests */ = {
@@ -209,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D092D6A119EF945700C6C020 /* Main.storyboard in Resources */,
+				D057272C19F13B93005E17DA /* TalkViewController.xib in Resources */,
 				D092D6BD19EF9F6600C6C020 /* heart.jpg in Resources */,
+				D057271719F0DC83005E17DA /* Libian.ttc in Resources */,
 				D092D6A319EF945700C6C020 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D057271F19F0F992005E17DA /* InformationController.m in Sources */,
 				D092D69819EF945700C6C020 /* AppDelegate.m in Sources */,
 				D092D69519EF945700C6C020 /* main.m in Sources */,
+				D057272B19F13B93005E17DA /* TalkViewController.m in Sources */,
 				D092D6C019EFA50600C6C020 /* CenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +312,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "survive/survive-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -302,6 +329,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -327,6 +355,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "survive/survive-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -336,6 +366,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -349,6 +380,7 @@
 				INFOPLIST_FILE = survive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -361,6 +393,7 @@
 				INFOPLIST_FILE = survive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

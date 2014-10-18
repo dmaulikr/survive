@@ -20,6 +20,21 @@
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    // 导航栏设置默认文字字体效果和颜色
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIColor whiteColor],
+                                                          NSForegroundColorAttributeName,
+                                                          shadow,
+                                                          NSShadowAttributeName,
+                                                          [UIFont fontWithName:@"Libian SC" size:24.0], NSFontAttributeName, nil]];
+    
+    // TabBar默认字体和颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                       [UIFont fontWithName:@"Libian SC" size:15.0], NSFontAttributeName, nil] forState:UIControlStateNormal];
     return YES;
 }
 

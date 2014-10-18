@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2D5DA5A6-C968-4203-94A4-89F01CDAB238</string>
+	<key>IDESourceControlProjectName</key>
+	<string>survive</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DCFFD76430F46E4F9EF8D0399D7E23AC32F1C72B</key>
+		<string>https://github.com/suzic/survive.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>survive.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DCFFD76430F46E4F9EF8D0399D7E23AC32F1C72B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/suzic/survive.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DCFFD76430F46E4F9EF8D0399D7E23AC32F1C72B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DCFFD76430F46E4F9EF8D0399D7E23AC32F1C72B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>survive</string>
+		</dict>
+	</array>
+</dict>
+</plist>
