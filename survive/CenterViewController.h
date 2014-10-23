@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIView *charactorZone;
 @property (strong, nonatomic) IBOutlet UIView *staticsZone;
 @property (strong, nonatomic) IBOutlet UIView *bottomZone;
+@property (strong, nonatomic) IBOutlet UIButton *avator;
 
 @property (strong, nonatomic) IBOutlet UIImageView *heartScaleView;
 @property (strong, nonatomic) IBOutlet UILabel *daysValue;

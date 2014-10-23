@@ -72,6 +72,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D06AF46519F4CD6300CF65BA /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				D057272819F13B93005E17DA /* TalkViewController.h */,
+				D057272919F13B93005E17DA /* TalkViewController.m */,
+				D057272A19F13B93005E17DA /* TalkViewController.xib */,
+			);
+			name = Talk;
+			sourceTree = "<group>";
+		};
 		D092D68619EF945700C6C020 = {
 			isa = PBXGroup;
 			children = (
@@ -95,15 +105,13 @@
 		D092D69119EF945700C6C020 /* survive */ = {
 			isa = PBXGroup;
 			children = (
+				D06AF46519F4CD6300CF65BA /* Talk */,
 				D092D69619EF945700C6C020 /* AppDelegate.h */,
 				D092D69719EF945700C6C020 /* AppDelegate.m */,
 				D092D6BE19EFA50600C6C020 /* CenterViewController.h */,
 				D092D6BF19EFA50600C6C020 /* CenterViewController.m */,
 				D057271D19F0F992005E17DA /* InformationController.h */,
 				D057271E19F0F992005E17DA /* InformationController.m */,
-				D057272819F13B93005E17DA /* TalkViewController.h */,
-				D057272919F13B93005E17DA /* TalkViewController.m */,
-				D057272A19F13B93005E17DA /* TalkViewController.xib */,
 				D057271619F0D87C005E17DA /* Libian.ttc */,
 				D092D69F19EF945700C6C020 /* Main.storyboard */,
 				D092D6A219EF945700C6C020 /* Images.xcassets */,
@@ -378,6 +386,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = survive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,6 +400,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = survive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

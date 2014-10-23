@@ -55,7 +55,7 @@
                                     <segue destination="tQX-RC-bKi" kind="embed" identifier="embedInfo" id="DLF-X4-X9N"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-N8-jj9" userLabel="Charactor">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-N8-jj9" userLabel="Top">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="220"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="st1-Kb-wPX" userLabel="Heart-Scale">
@@ -81,18 +81,6 @@
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muo-HT-6jb" userLabel="Avatar">
-                                        <rect key="frame" x="450" y="20" width="150" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Muo-HT-6jb" secondAttribute="height" multiplier="3:4" id="IHh-h1-e69"/>
-                                        </constraints>
-                                        <state key="normal" image="DefaultHead">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="avatorTalk:" destination="EIG-dZ-Km2" eventType="touchUpInside" id="vwf-Yp-vzl"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -101,12 +89,9 @@
                                     <constraint firstAttribute="height" constant="220" id="FhR-Si-zH7"/>
                                     <constraint firstItem="xnL-A6-Alg" firstAttribute="leading" secondItem="BtB-N8-jj9" secondAttribute="leading" id="Gg3-0j-OKm"/>
                                     <constraint firstItem="st1-Kb-wPX" firstAttribute="top" secondItem="BtB-N8-jj9" secondAttribute="top" id="Jrn-jf-6DF"/>
-                                    <constraint firstAttribute="trailing" secondItem="Muo-HT-6jb" secondAttribute="trailing" id="f1e-Gq-ndU"/>
                                     <constraint firstItem="Ogj-hJ-Trh" firstAttribute="leading" secondItem="BtB-N8-jj9" secondAttribute="leading" constant="120" id="f4F-f5-Qsh"/>
                                     <constraint firstItem="xnL-A6-Alg" firstAttribute="top" secondItem="BtB-N8-jj9" secondAttribute="top" constant="143" id="qYC-h8-0tq"/>
                                     <constraint firstAttribute="trailing" secondItem="Ogj-hJ-Trh" secondAttribute="trailing" constant="16" id="ujd-4I-IDc"/>
-                                    <constraint firstItem="Muo-HT-6jb" firstAttribute="top" secondItem="BtB-N8-jj9" secondAttribute="top" constant="20" id="vC2-2s-7hJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="Muo-HT-6jb" secondAttribute="bottom" id="vVx-TP-AyX"/>
                                     <constraint firstAttribute="bottom" secondItem="st1-Kb-wPX" secondAttribute="bottom" id="x1q-VF-A10"/>
                                     <constraint firstItem="Ogj-hJ-Trh" firstAttribute="top" secondItem="BtB-N8-jj9" secondAttribute="top" constant="165" id="z0x-PY-1NR"/>
                                 </constraints>
@@ -347,11 +332,25 @@
                                     <constraint firstAttribute="centerY" secondItem="cIE-aJ-Fl4" secondAttribute="centerY" constant="0.5" id="iiw-ez-R8c"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muo-HT-6jb" userLabel="Avatar">
+                                <rect key="frame" x="450" y="20" width="150" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Muo-HT-6jb" secondAttribute="height" multiplier="3:4" id="IHh-h1-e69"/>
+                                </constraints>
+                                <state key="normal" image="DefaultHead">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="avatorTalk:" destination="EIG-dZ-Km2" eventType="touchUpInside" id="vwf-Yp-vzl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Muo-HT-6jb" secondAttribute="trailing" id="2Kc-Cj-arZ"/>
                             <constraint firstAttribute="trailing" secondItem="FHz-0e-pJ3" secondAttribute="trailing" id="2xn-ah-dXl"/>
                             <constraint firstAttribute="trailing" secondItem="BtB-N8-jj9" secondAttribute="trailing" id="30w-Sd-8eb"/>
+                            <constraint firstItem="Muo-HT-6jb" firstAttribute="top" secondItem="i0p-go-ppw" secondAttribute="bottom" id="FFR-Lc-QqR"/>
                             <constraint firstItem="FWN-wm-3cb" firstAttribute="top" secondItem="i0p-go-ppw" secondAttribute="bottom" constant="180" id="TLf-w3-F2d"/>
                             <constraint firstItem="0Vm-bz-d0z" firstAttribute="leading" secondItem="z9G-Wl-yBM" secondAttribute="leading" id="X9d-ab-wHY"/>
                             <constraint firstItem="BtB-N8-jj9" firstAttribute="leading" secondItem="z9G-Wl-yBM" secondAttribute="leading" id="ZOe-sb-NTu"/>
@@ -369,6 +368,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="action" destination="Y3g-jT-mLr" id="Ey8-sT-AIe"/>
+                        <outlet property="avator" destination="Muo-HT-6jb" id="fdb-gA-kxu"/>
                         <outlet property="bottomZone" destination="FHz-0e-pJ3" id="9Pl-uo-1Df"/>
                         <outlet property="charactorZone" destination="BtB-N8-jj9" id="vo3-LA-guE"/>
                         <outlet property="container" destination="0Vm-bz-d0z" id="4X4-dh-Lyv"/>

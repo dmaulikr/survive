@@ -15,7 +15,6 @@
 
 @interface CenterViewController () <UIAlertViewDelegate, UIPopoverControllerDelegate>
 {
-    int viewHeight;
     NSTimer *timer;
     double during;
     double interval;
@@ -23,8 +22,9 @@
 }
 
 @property (assign, nonatomic) InformationController* informationController;
-
-@property (strong, nonatomic) UIPopoverController* talkPopoverController;;
+@property (strong, nonatomic) UIPopoverController* talkPopoverController;
+@property (strong, nonatomic) UIView* talkOverlayerView;
+@property (strong, nonatomic) TalkViewController* talkViewController;
 
 @end
 
@@ -34,22 +34,32 @@
 {
     [super viewDidLoad];
     
+    // 增加对话泡相关UI
+    self.talkOverlayerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1024, 1024)];
+    [self.talkOverlayerView setBackgroundColor:[UIColor colorWithWhite:1 alpha:0.5]];
+    self.talkViewController = [[TalkViewController alloc] initWithNibName:@"TalkViewController" bundle:nil];
+    [self.talkOverlayerView addSubview:self.talkViewController.view];
+    [self.view addSubview:self.talkOverlayerView];
+    [self.talkOverlayerView setHidden:YES];
+    
     // 注册返回消息
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backToCenter:) name:BackCenter object:nil];
-    
+
+    // 增加对时间标签的点击响应
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pressCD:)];
     [self.wating addGestureRecognizer:tapGesture];
-    
-    viewHeight = self.view.frame.size.height;
-    
+
+    // 设置时间标签计时器
     during = 30.0;
     interval = 1.00;
     ticker = 0;
     timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(timerHandler) userInfo:nil repeats:YES];
-    
+
+    // 对界面叠加层设置初始的动画转换计算
     self.charactorZone.transform = CGAffineTransformMakeTranslation(0, 0);
     self.staticsZone.transform = CGAffineTransformMakeTranslation(0, 0);
     self.bottomZone.transform = CGAffineTransformMakeTranslation(0, 0);
+    self.avator.transform = CGAffineTransformMakeTranslation(0, 0);
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,14 +87,13 @@
 
 - (IBAction)avatorTalk:(id)sender
 {
-    return;
-//    UIButton* avator = (UIButton*)sender;
-//    TalkViewController* talkViewController = [[TalkViewController alloc] initWithNibName:@"TalkViewController" bundle:nil];
-//    self.talkPopoverController = [[UIPopoverController alloc] initWithContentViewController:talkViewController];
-//    [self.talkPopoverController presentPopoverFromRect:avator.frame
-//                                                inView:self.view
-//                              permittedArrowDirections:UIPopoverArrowDirectionUp
-//                                              animated:YES];
+    UIButton* avator = (UIButton*)sender;
+    TalkViewController* talkViewController = [[TalkViewController alloc] initWithNibName:@"TalkViewController" bundle:nil];
+    self.talkPopoverController = [[UIPopoverController alloc] initWithContentViewController:talkViewController];
+    [self.talkPopoverController presentPopoverFromRect:avator.frame
+                                                inView:self.view
+                              permittedArrowDirections:UIPopoverArrowDirectionRight
+                                              animated:YES];
 }
 
 - (void)pressCD:(id)sender
@@ -110,9 +119,12 @@
     self.charactorZone.transform = CGAffineTransformIdentity;
     self.staticsZone.transform = CGAffineTransformIdentity;
     self.bottomZone.transform = CGAffineTransformIdentity;
+    self.avator.transform = CGAffineTransformIdentity;
+
     [self.charactorZone setFrame:CGRectMake(0, -220, self.charactorZone.frame.size.width, self.charactorZone.frame.size.height)];
     [self.staticsZone setFrame:CGRectMake(0, -360, self.staticsZone.frame.size.width, self.staticsZone.frame.size.height)];
-    [self.bottomZone setFrame:CGRectMake(0, viewHeight, self.bottomZone.frame.size.width, self.bottomZone.frame.size.height)];
+    [self.bottomZone setFrame:CGRectMake(0, self.view.frame.size.height, self.bottomZone.frame.size.width, self.bottomZone.frame.size.height)];
+    [self.avator setFrame:CGRectMake(0, -220, self.avator.frame.size.width, self.avator.frame.size.height)];
 }
 
 - (void)switchOverlayShowCharactor:(bool)showCharactor andShowStatics:(bool)showStatic andShowBottomBar:(bool)showBottom
@@ -122,6 +134,7 @@
         self.charactorZone.transform = CGAffineTransformMakeTranslation(0, showCharactor ? 0 : -220);
         self.staticsZone.transform = CGAffineTransformMakeTranslation(0, showStatic ? 0 : -360);
         self.bottomZone.transform = CGAffineTransformMakeTranslation(0, showBottom ? 0 : 30);
+        self.avator.transform = CGAffineTransformMakeTranslation(0, showCharactor ? 0 : -220);
     } completion:^(BOOL finished) {
         if (completion != nil)
             completion(finished);
