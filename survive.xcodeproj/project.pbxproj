@@ -18,6 +18,7 @@
 		D092D6B219EF945700C6C020 /* surviveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D6B119EF945700C6C020 /* surviveTests.m */; };
 		D092D6BD19EF9F6600C6C020 /* heart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D092D6BC19EF9F6600C6C020 /* heart.jpg */; };
 		D092D6C019EFA50600C6C020 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D092D6BF19EFA50600C6C020 /* CenterViewController.m */; };
+		D0B2457D1A02257C00638AA0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B2457C1A02257C00638AA0 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D092D6BC19EF9F6600C6C020 /* heart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heart.jpg; sourceTree = "<group>"; };
 		D092D6BE19EFA50600C6C020 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
 		D092D6BF19EFA50600C6C020 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		D0B2457C1A02257C00638AA0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		D092D6BB19EF9F6600C6C020 /* demouse */ = {
 			isa = PBXGroup;
 			children = (
+				D0B2457C1A02257C00638AA0 /* icon.png */,
 				D092D6BC19EF9F6600C6C020 /* heart.jpg */,
 			);
 			path = demouse;
@@ -205,7 +208,7 @@
 				TargetAttributes = {
 					D092D68E19EF945700C6C020 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = C3G79G7UVP;
+						DevelopmentTeam = XEW439Z58D;
 					};
 					D092D6AA19EF945700C6C020 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -239,6 +242,7 @@
 			files = (
 				D092D6A119EF945700C6C020 /* Main.storyboard in Resources */,
 				D057272C19F13B93005E17DA /* TalkViewController.xib in Resources */,
+				D0B2457D1A02257C00638AA0 /* icon.png in Resources */,
 				D092D6BD19EF9F6600C6C020 /* heart.jpg in Resources */,
 				D057271719F0DC83005E17DA /* Libian.ttc in Resources */,
 				D092D6A319EF945700C6C020 /* Images.xcassets in Resources */,
@@ -314,7 +318,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhi Su (6ZQK5CPJR3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhi Su (6ZQK5CPJR3)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -358,7 +363,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhi Su (6ZQK5CPJR3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhi Su (6ZQK5CPJR3)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -384,11 +390,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhi Su (6ZQK5CPJR3)";
 				INFOPLIST_FILE = survive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9aac2556-fd33-4c97-8f22-244865d0b671";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -398,11 +405,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhi Su (6ZQK5CPJR3)";
 				INFOPLIST_FILE = survive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9aac2556-fd33-4c97-8f22-244865d0b671";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
