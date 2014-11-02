@@ -87,6 +87,7 @@
 
 - (IBAction)avatorTalk:(id)sender
 {
+    return;
     UIButton* avator = (UIButton*)sender;
     TalkViewController* talkViewController = [[TalkViewController alloc] initWithNibName:@"TalkViewController" bundle:nil];
     self.talkPopoverController = [[UIPopoverController alloc] initWithContentViewController:talkViewController];
